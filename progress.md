@@ -18,3 +18,8 @@ goals for tomorrow:
 - **strech goal**: try to **start** implementing as well on day 2
 
 ## Day 2
+
+- finished the mind map
+- I have a decent mental model now
+- think I need to start focusing on wiriting more psuedocode
+- main goal for todya i sto finish my psuedocode + related notes for memory module then chunk module
