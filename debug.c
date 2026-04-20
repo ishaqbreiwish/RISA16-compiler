@@ -2,6 +2,10 @@
 
 #include "debug.h"
 
+// disembles chunk
+// goes through the whole chunk starting at offset 0
+// uses disassemble instruction to know the offset based ont he size of the hunk
+// and advance based on the size of chunk
 void disassembleChunk(Chunk* chunk, const char* name) {
   printf("== %s ==\n", name);
 
@@ -10,11 +14,19 @@ void disassembleChunk(Chunk* chunk, const char* name) {
   }
 }
 
+
+// basically just increments the offset, and prints the name
+// just a simplified way to boith print the name and advance the offset
+// w/ out writing it one million times
 static int simpleInstruction(const char* name, int offset) {
   printf("%s\n", name);
   return offset + 1;
 }
 
+// dissaembling instructions
+// the instruction is just the byte at the code in index offset
+// you use a switch case  to return the instruction  using simple instruction
+//
 int disassembleInstruction(Chunk* chunk, int offset) {
   printf("%04d ", offset);
 

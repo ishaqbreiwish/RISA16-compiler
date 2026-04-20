@@ -23,3 +23,10 @@ goals for tomorrow:
 - I have a decent mental model now
 - think I need to start focusing on wiriting more psuedocode
 - main goal for todya i sto finish my psuedocode + related notes for memory module then chunk module
+
+### final recap:
+- finished psuedocode for all the relevant files
+
+### goals for tomorrow: 
+- start working on implementation
+- maybe start with memory.h and try to finish memory.c as well
