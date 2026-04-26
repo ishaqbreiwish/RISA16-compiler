@@ -30,3 +30,15 @@ goals for tomorrow:
 ### goals for tomorrow: 
 - start working on implementation
 - maybe start with memory.h and try to finish memory.c as well
+
+## Day 3
+
+- i want to try to finish the memory module today iA
+
+### final recap:
+- finished memory module
+- finished chunk module too
+
+### goals for tomorrow:
+- should be good to continue the chapter
+- hopefully iA want to finish it out and maybe take the psuedocode notes tomorrow
