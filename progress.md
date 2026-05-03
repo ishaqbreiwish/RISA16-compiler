@@ -42,3 +42,18 @@ goals for tomorrow:
 ### goals for tomorrow:
 - should be good to continue the chapter
 - hopefully iA want to finish it out and maybe take the psuedocode notes tomorrow
+
+## Day 4
+
+### goals for today:
+-  reading the chapter apparently lmao
+
+### final recap
+- read the chapter
+- understand whats happening
+- makign rust vm was a good primer aH
+
+### goals for tomorrow:
+- figure out the origin of the current seg fault
+- iA go through and write detailed psuedocode
+- bear in midn to lower dependency on the book maybe more elaborate psuedocode but then try to reallly sit with functions and rewrite them even think about the order it makes sense to write them in

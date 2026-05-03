@@ -1,6 +1,5 @@
 #include "chunk.h"
 #include "memory.h"
-#include <cstdint>
 #include <stdint.h>
 #include <stdlib.h>
 
@@ -12,6 +11,7 @@ void initChunk(Chunk *chunk) {
     int count = 0;
     int capacity = 0;
     uint8_t* code = NULL;
+    initValueArray(&chunk->constants);
 }
 
 // free th ebacking array for the free chunk
@@ -19,6 +19,7 @@ void initChunk(Chunk *chunk) {
 void freeChunk(Chunk *chunk) {
     FREE_ARRAY(uint8_t, chunk->code, chunk->capacity);
     initChunk(chunk);
+    freeValueArray(&chunk->constants);
 }
 
 // write to the chunk function
@@ -42,4 +43,10 @@ void writeChunk(Chunk *chunk, uint8_t byte) {
 
     chunk->code[chunk->count] = byte;
     chunk->count++;
+}
+
+// adds a constant to our chunk
+int addConstant(Chunk* chunk, Value value) {
+  writeValueArray(&chunk->constants, value);
+  return chunk->constants.count - 1;
 }
